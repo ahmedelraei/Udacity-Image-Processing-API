@@ -4,7 +4,7 @@ const validateMiddleware = (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): unknown => {
   if (req.query.filename && req.query.width && req.query.height) {
     return next()
   } else {

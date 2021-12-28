@@ -8,9 +8,9 @@
     "build": "npx tsc",
     "test": "npx tsc && jasmine",
     "start:prod": "npm run build && node build/index.js1",
-    "lint": "eslint .",
+    "lint": "eslint src/**/**.ts",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write .ts src"
+    "format": "prettier --write src/**/**.ts"
   },
   "keywords": [],
   "author": "Ahmed Elraei",
@@ -27,8 +27,11 @@
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jasmine": "^3.10.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "nodemon": "^2.0.15",
     "prettier": "2.5.1",
+    "supertest": "^6.1.6",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   },
@@ -36,10 +39,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "helmet": "^4.6.0",
-    "jasmine": "^3.10.0",
-    "jasmine-spec-reporter": "^7.0.0",
     "morgan": "^1.10.0",
-    "sharp": "^0.29.3",
-    "supertest": "^6.1.6"
+    "sharp": "^0.29.3"
   }
 }

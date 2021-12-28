@@ -1,6 +1,7 @@
 import sharp from 'sharp'
 import { IMAGE_OUTPUT_DIR_PATH, IMAGE_DIR_PATH } from '../constants'
 import path from 'path'
+
 const resizeController = async (
   width: number,
   height: number,
@@ -16,7 +17,7 @@ const resizeController = async (
       .resize(Number(width), Number(height))
       .toFile(outputImagePath)
   } catch (error) {
-    throw new Error(error as string)
+    throw new Error('Error while processing image.')
   }
 }
 

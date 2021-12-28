@@ -22,7 +22,9 @@ routes.get(
       }
       res.status(200).sendFile(outputImagePath)
     } catch (error: unknown) {
-      throw new Error(error as string)
+      res
+        .status(422)
+        .json({ message: 'Something went wrong during processing.' })
     }
   }
 )
