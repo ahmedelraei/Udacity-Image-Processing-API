@@ -7,7 +7,7 @@
     "start": "nodemon src/index.ts",
     "build": "npx tsc",
     "test": "npx tsc && jasmine",
-    "start:prod": "npm run build && node build/index.js1",
+    "start:prod": "npm run build && node build/index.js",
     "lint": "eslint src/**/**.ts",
     "lint:fix": "eslint --fix",
     "format": "prettier --write src/**/**.ts"
